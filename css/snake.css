@@ -1,0 +1,365 @@
+#mainWrapper {
+    width: 95%;
+    margin: auto;
+}
+
+#scoreBox {
+    width: 30%;
+    padding: 20px;
+    color: #008000;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 7vw;
+    line-height: 200px;
+    min-height: 200px;
+    transition: all 2s;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+
+#scoreBox:hover {
+    background-color: #edbdd3;
+}
+
+#scoreBox strong {
+    color: #008000;
+}
+
+#info {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #008000;
+    display: block;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    transition: all 2s;
+}
+
+#info:hover {
+    background-color: #edbdd3;
+    ;
+}
+
+#setNameWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 97%;
+    border: 3px solid #008000;
+    padding: 10px;
+    margin: 10px;
+    transition: all 2s;
+}
+
+#setNameWrapper:hover {
+    background-color: #bbf4bb;
+}
+
+.logo {
+    width: 40%;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+    color: #ff0077;
+    padding: 5px;
+    margin: 10px;
+    transition: all 1s;
+}
+
+.logoHover {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 25%;
+    border-radius: 50%;
+    border: 15px solid #ff0077;
+    font-size: 1px;
+    color: #ff0077;
+    transition: all 1s;
+}
+
+.setNameLabel {
+    border-radius: 3%;
+    font-size: 30px;
+    color: #008000;
+    padding: 5px;
+    margin: 10px;
+    transition: all 2s;
+}
+
+#a {
+    border-radius: 3%;
+    font-size: 25px;
+    color: #ff0077;
+    padding: 5px;
+    margin: 10px;
+    transition: all 2s;
+    text-decoration: none;
+}
+
+#gameOver {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0.7;
+    left: -300px;
+    border-radius: 3%;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 5px;
+    margin: 10px;
+    visibility: hidden;
+    transition: all 0.7s;
+}
+
+#form-input-value {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#saveButton {
+    border-radius: 3%;
+    border: 1px solid #008000;
+    font-size: 25px;
+    color: #008000;
+    font-weight: 700;
+    padding: 5px;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+#saveButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#gameOver>span {
+    font-size: 20px;
+}
+
+#level {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -300px;
+    border-radius: 3%;
+    font-size: 40px;
+    color: #f0a243;
+    font-weight: 800;
+    padding: 5px;
+    margin: 10px;
+    transition: all 0.7s;
+}
+
+#saveLevel {
+    border-radius: 3%;
+    border: 1px solid #008000;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #008000;
+    font-weight: 700;
+    padding: 5px;
+    margin: 10px;
+    background-color: #f0a243;
+    transition: all 0.5s;
+}
+
+#saveLevel:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#kindOfLevel * {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #008000;
+    font-size: 20px;
+    background-color: #008000;
+    font-weight: 500;
+    padding: 5px;
+    margin: 10px;
+}
+
+#kindOfLevel:hover {
+    cursor: pointer;
+}
+
+#historyWrapper {
+    color: #008000;
+    margin: 20px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid #008000;
+    font-size: 20px;
+    transition: all 2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column wrap;
+}
+
+#historyWrapper:hover {
+    background-color: #bbf4bb;
+}
+
+#historyContent {
+    color: #008000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid #008000;
+    font-size: 20px;
+    transition: all 2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#historyContent>p {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 200px;
+    margin: 0 3px 3px 3px;
+    border-left: 1px solid #008000;
+    border-bottom: 1px solid #008000;
+    border-right: 1px solid #008000;
+    padding: 5px;
+    transition: all 0.2s;
+    text-align: justify;
+}
+
+#historyContent>p:hover {
+    background-color: #f0abcb;
+    cursor: pointer;
+}
+
+#snakeWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#area {
+    color: #464545;
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    background: #008000;
+    border: 2px solid #000000;
+    margin: 20px;
+    transition: all 2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#snakeHead {
+    width: 15px;
+    height: 15px;
+    background-color: #0000ff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+#eyesWrapper {
+    width: 15px;
+    height: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eyes {
+    width: 3px;
+    height: 3px;
+    background-color: #000000;
+    margin: 2px;
+}
+
+#mouth {
+    margin-top: 3px;
+    margin-left: 4.5px;
+    width: 6px;
+    height: 3px;
+    background-color: #e41717;
+    border-radius: 70%;
+}
+
+.snakeBody {
+    width: 15px;
+    height: 15px;
+    background-color: #ff0077;
+    position: absolute;
+    border: 1px solid #000000;
+    z-index: 50;
+}
+
+#apple {
+    width: 15px;
+    height: 15px;
+    background-color: #f0a243;
+    border: 1px solid #000000;
+    border-radius: 45%;
+    position: absolute;
+}
+
+#start {
+    width: 98%;
+    margin: 15px 0;
+    cursor: pointer;
+    padding: 10px;
+    color: #008000;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 45%;
+    border: 2px solid #008000;
+    transition: all 2s;
+}
+
+#start:hover {
+    transform: scale(1.1);
+    color: #ff0077;
+    border: 2px solid #ff0077;
+}
+
+#pauza {
+    color: #f0a243;
+    font-size: 90px;
+    z-index: 300;
+    opacity: 0.5;
+    display: none;
+}
+
+#enterToStart {
+    color: #f0a243;
+    font-size: 50px;
+    z-index: 300;
+    opacity: 0.5;
+    display: none;
+}
+
+@media (max-width: 900px) {
+    #snakeWrapper {
+        flex-flow: column nowrap;
+    }
+}

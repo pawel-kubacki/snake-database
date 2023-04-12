@@ -1,0 +1,122 @@
+#mainWrapper {
+	width: 95%;
+	margin: auto;
+}
+
+#welcome {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+	align-items: center;
+	border: 3px solid #008000;
+	padding: 10px;
+	margin: 10px;
+	transition: all 2s;
+	background-color: #bbf4bb;
+}
+
+#formWrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	border: 3px solid #008000;
+	justify-content: space-around;
+	margin: 10px;
+	padding: 10px;
+	color: #008000;
+	font-size: 20px;
+	/* transition: all 2s; */
+	background-color: #bbf4bb;
+}
+
+/* #formWrapper:hover {
+	background-color: #bbf4bb;
+} */
+
+form {
+	width: 40%;
+	display: flex;
+	flex-flow: column nowrap;
+	border: 3px, solid #008000;
+	justify-content: flex-start;
+	margin: 10px;
+	padding: 5px;
+}
+
+form>input {
+	border: 1px solid #ff0077;
+	padding: 5px;
+	font-size: 20px;
+	color: #0864d6;
+}
+
+form>input:hover {
+	background-color: #edbdd3;
+	cursor: text;
+	transition: all 0.5s;
+}
+
+#checkRegulations {
+	margin: 0;
+}
+
+button {
+	width: 98%;
+	margin: 15px 0;
+	cursor: pointer;
+	padding: 10px;
+	color: #008000;
+	font-size: large;
+	font-weight: 700;
+	border-radius: 45%;
+	border: 2px solid #008000;
+	transition: all 2s;
+}
+
+button:hover {
+	transform: scale(1.1);
+	color: #ff0077;
+	border: 2px solid #ff0077;
+}
+
+#welcome>h1 {
+	color: #ff0077;
+	margin: 20px;
+}
+
+h3 {
+	color: #ff0077;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	width: 40%;
+	font-size: 30px;
+	font-weight: 800;
+	text-align: center;
+	align-items: center;
+	color: #ff0077;
+	padding: 5px;
+	margin: 10px;
+	transition: all 1s;
+}
+
+.logoHover {
+	width: 25px;
+	height: 25px;
+	margin: 5px 5px 5px 25%;
+	border-radius: 50%;
+	border: 15px solid #ff0077;
+	font-size: 1px;
+	color: #ff0077;
+	transition: all 1s;
+}
+
+.error {
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
